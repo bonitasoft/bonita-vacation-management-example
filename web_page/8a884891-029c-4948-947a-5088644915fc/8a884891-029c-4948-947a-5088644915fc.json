@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.5.7",
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
   "id" : "8a884891-029c-4948-947a-5088644915fc",
   "name" : "removeAllBusinessDataOverview",
-  "type" : "form",
-  "lastUpdate" : 1496130884344,
+  "lastUpdate" : 1522399121117,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -133,6 +133,12 @@
     "type" : "css",
     "order" : 1,
     "external" : false
+  }, {
+    "id" : "b61ce2ad-556f-4e1b-8702-3cbf8b0c9851",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
   } ],
   "inactiveAssets" : [ ],
   "data" : {
@@ -146,5 +152,7 @@
       "value" : "../API/bdm/businessData/com.company.model.VacationRequest?q=find&p=0&c=100",
       "exposed" : false
     }
-  }
+  },
+  "uuid" : "8a884891-029c-4948-947a-5088644915fc",
+  "type" : "form"
 }

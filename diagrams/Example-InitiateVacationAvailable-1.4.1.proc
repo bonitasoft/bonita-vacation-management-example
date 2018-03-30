@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_Yl2RAEUNEeeJkrA3PIO9Tw" name="Example-InitiateVacationAvailable" version="1.4.1" author="antoine" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED00057400314578616D706C652D496E6974696174655661636174696F6E417661696C61626C65372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_Yl2RAUUNEeeJkrA3PIO9Tw" name="Initiate Vacation Available" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_Yl2RAkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_Yl2RH0UNEeeJkrA3PIO9Tw">
@@ -40,6 +40,27 @@
         <condition xmi:type="expression:Expression" xmi:id="_Yl2RHkUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Yl2RH0UNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_RMrzEDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_RMrzETP3Eei3W8hk9dX2TQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_RMrzEjP3Eei3W8hk9dX2TQ" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_RMrzEzP3Eei3W8hk9dX2TQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_RMrzFDP3Eei3W8hk9dX2TQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_RMrzFTP3Eei3W8hk9dX2TQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_RMrzFjP3Eei3W8hk9dX2TQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzFzP3Eei3W8hk9dX2TQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzGDP3Eei3W8hk9dX2TQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzGTP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzGjP3Eei3W8hk9dX2TQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzGzP3Eei3W8hk9dX2TQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHDP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHTP3Eei3W8hk9dX2TQ" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHjP3Eei3W8hk9dX2TQ" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHzP3Eei3W8hk9dX2TQ" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_Yl2RIEUNEeeJkrA3PIO9Tw"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_Yl2RIUUNEeeJkrA3PIO9Tw">
         <name xmi:type="expression:Expression" xmi:id="_Yl2RIkUNEeeJkrA3PIO9Tw" content="" returnTypeFixed="true"/>

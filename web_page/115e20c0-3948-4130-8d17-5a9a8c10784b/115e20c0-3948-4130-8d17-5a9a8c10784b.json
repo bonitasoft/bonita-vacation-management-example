@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.5.7",
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
   "id" : "115e20c0-3948-4130-8d17-5a9a8c10784b",
   "name" : "ExampleVacationManagement",
-  "type" : "page",
-  "lastUpdate" : 1496755428675,
+  "lastUpdate" : 1522399121248,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -107,6 +107,10 @@
         "alignment" : {
           "type" : "constant",
           "value" : "left"
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
         }
       },
       "reference" : "5c6435b4-22df-4d28-9c17-728fa46038ba",
@@ -132,6 +136,10 @@
         "alignment" : {
           "type" : "constant",
           "value" : "left"
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
         }
       },
       "reference" : "8c1c905d-5524-423b-80bb-e85d873c3428",
@@ -157,6 +165,10 @@
         "alignment" : {
           "type" : "constant",
           "value" : "left"
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
         }
       },
       "reference" : "e628edbc-0e8a-4d75-8a21-a5622d30607c",
@@ -652,6 +664,10 @@
                 "alignment" : {
                   "type" : "constant",
                   "value" : "left"
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
                 }
               },
               "reference" : "73d6422a-67af-4bda-bddb-3393d70dff4e",
@@ -768,6 +784,10 @@
             "alignment" : {
               "type" : "constant",
               "value" : "left"
+            },
+            "allowHTML" : {
+              "type" : "constant",
+              "value" : true
             }
           },
           "reference" : "cde88b51-8e6e-4d9e-9997-17ee08ef570f",
@@ -1058,6 +1078,12 @@
     } ] ]
   } ] ],
   "assets" : [ {
+    "id" : "78c2c40f-de96-4994-9a7b-720aca663f4b",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 3,
+    "external" : false
+  }, {
     "id" : "1055f091-2ed5-4dbf-98c4-31bb7f58ac0d",
     "name" : "style.css",
     "type" : "css",
@@ -1137,5 +1163,7 @@
       "value" : "// Return the API URL to instantiate the cancel vacation request\r\n// process\r\nif ($data.processCancel  && $data.processCancel.length > 0) {\r\n  return \"../API/bpm/process/\" +\r\n    $data.processCancel[0].id +\r\n    \"/instantiation\";\r\n} else {\r\n  return null;\r\n}",
       "exposed" : false
     }
-  }
+  },
+  "uuid" : "115e20c0-3948-4130-8d17-5a9a8c10784b",
+  "type" : "page"
 }

@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.5.7",
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
   "id" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
   "name" : "newVacationRequestForm",
-  "type" : "form",
-  "lastUpdate" : 1496753736858,
+  "lastUpdate" : 1522399121547,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -432,6 +432,12 @@
     }
   } ] ],
   "assets" : [ {
+    "id" : "e0281c2f-3397-48a2-9cf9-76547b6b7c40",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
     "id" : "b84e1cd8-0ef8-4cf5-886e-1df984939854",
     "name" : "style.css",
     "type" : "css",
@@ -445,5 +451,7 @@
       "value" : "{\r\n  \"startDateContract\" : null,\r\n  \"returnDateContract\" : null,\r\n  \"numberOfDaysContract\" : 0\r\n}",
       "exposed" : false
     }
-  }
+  },
+  "uuid" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
+  "type" : "form"
 }

@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.5.7",
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
   "id" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
   "name" : "reviewRequestForm",
-  "type" : "form",
-  "lastUpdate" : 1496134387533,
+  "lastUpdate" : 1522399121369,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -498,6 +498,12 @@
     }
   } ] ],
   "assets" : [ {
+    "id" : "22109d78-ac46-431a-b392-ec6aa300f73f",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
     "id" : "ac67931f-df84-4d80-8494-c7f7a5547d1e",
     "name" : "style.css",
     "type" : "css",
@@ -526,5 +532,7 @@
       "value" : "../{{context.vacationRequest_ref.link}}",
       "exposed" : false
     }
-  }
+  },
+  "uuid" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
+  "type" : "form"
 }

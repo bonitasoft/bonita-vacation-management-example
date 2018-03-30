@@ -34,12 +34,8 @@
     </children>
   </processDependencies>
   <processDependencies id="OTHER"/>
-  <processDependencies id="DATA_TYPES"/>
-  <processDependencies id="GROOVY_SCRIPT"/>
   <applicationDependencies id="VALIDATOR"/>
   <applicationDependencies id="OTHER"/>
-  <applicationDependencies id="DATA_TYPES"/>
-  <applicationDependencies id="GROOVY_SCRIPT"/>
   <parameters name="calendarApplicationName" value="Bonitasoft-NewVacationRequest/1.4.0" typeClassname="java.lang.String"/>
   <parameters name="calendarCalendarId" value="mydomain.com_4gc5656x7f57cfsrejgb@group.calendar.google.com" typeClassname="java.lang.String"/>
   <parameters name="calendarServiceAccountId" value="65654445676456-cg7867cgh867xrjgfxfjkhr@developer.gserviceaccount.com" typeClassname="java.lang.String"/>

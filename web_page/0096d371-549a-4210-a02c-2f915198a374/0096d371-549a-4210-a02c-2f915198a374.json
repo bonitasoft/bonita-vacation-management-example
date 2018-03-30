@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.5.7",
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
   "id" : "0096d371-549a-4210-a02c-2f915198a374",
   "name" : "intiateVacationAvailable",
-  "type" : "form",
-  "lastUpdate" : 1496752667524,
+  "lastUpdate" : 1522399121508,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -190,6 +190,10 @@
       "alignment" : {
         "type" : "constant",
         "value" : "left"
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
       }
     },
     "reference" : "0e74d1b5-4ef5-4c44-926e-b6467ee8b77e",
@@ -215,6 +219,10 @@
       "alignment" : {
         "type" : "constant",
         "value" : "left"
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
       }
     },
     "reference" : "bce7bf3a-3f0b-4c52-9e97-866d57d43c4f",
@@ -225,6 +233,12 @@
     "name" : "toolbox.js",
     "type" : "js",
     "order" : 3,
+    "external" : false
+  }, {
+    "id" : "bd4c6918-a877-46a5-9c95-2f4187eb85b7",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 4,
     "external" : false
   }, {
     "id" : "d337cf37-5fd6-46c3-a522-7fb06c06f8d6",
@@ -248,5 +262,7 @@
       "value" : "if ($data.failedResponse) {\n    return \"<b>VacationAvaialble initialization failed:</b><br /><br /><i>Exception:</i><br />\" + htmlEntities($data.failedResponse.exception) + \"<br /><br /><i>Error message: </i><br />\" + htmlEntities($data.failedResponse.message);\n} else {\n    return null;\n}",
       "exposed" : false
     }
-  }
+  },
+  "uuid" : "0096d371-549a-4210-a02c-2f915198a374",
+  "type" : "form"
 }

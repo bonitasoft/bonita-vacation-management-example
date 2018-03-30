@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002A4578616D706C652D4E65775661636174696F6E52657175657374372E362E302D303032372E372E307370">
     <elements xmi:type="process:Pool" xmi:id="_WQx3EUUNEeeJkrA3PIO9Tw" name="New Vacation Request" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_WQx3EkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_WQygaUUNEeeJkrA3PIO9Tw">
@@ -1229,6 +1229,118 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_oIb9ITP3Eei3W8hk9dX2TQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9IjP3Eei3W8hk9dX2TQ" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_oIb9IzP3Eei3W8hk9dX2TQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_oIb9JDP3Eei3W8hk9dX2TQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_oIb9JTP3Eei3W8hk9dX2TQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_oIb9JjP3Eei3W8hk9dX2TQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9JzP3Eei3W8hk9dX2TQ" name="vacationReviewerBackup">
+            <groups xmi:type="actormapping:Groups" xmi:id="_oIb9KDP3Eei3W8hk9dX2TQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_oIb9KTP3Eei3W8hk9dX2TQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_oIb9KjP3Eei3W8hk9dX2TQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_oIb9KzP3Eei3W8hk9dX2TQ"/>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LDP3Eei3W8hk9dX2TQ" type="ACTOR_FILTER" definitionId="initiator-manager" definitionVersion="1.0.0" implementationId="initiator-manager-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LTP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.0.15"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LjP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-create-event" definitionVersion="1.0.0" implementationId="google-calendar-create-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LzP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9MDP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-delete-event" definitionVersion="1.0.0" implementationId="google-calendar-delete-event-impl" implementationVersion="1.0.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MTP3Eei3W8hk9dX2TQ" id="ACTOR_FILTER">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MjP3Eei3W8hk9dX2TQ" id="initiator-manager-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9MzP3Eei3W8hk9dX2TQ" key="initiator-manager-impl -- 1.0.0" value="bonita-userfilter-initiator-manager-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIb9NDP3Eei3W8hk9dX2TQ" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9NTP3Eei3W8hk9dX2TQ" id="email-impl-1.0.15">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9NjP3Eei3W8hk9dX2TQ" key="email-impl -- 1.0.15" value="bonita-connector-email-impl-1.0.15.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9NzP3Eei3W8hk9dX2TQ" key="email-impl -- 1.0.15" value="mail-1.4.5.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9ODP3Eei3W8hk9dX2TQ" id="google-calendar-create-event-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-create-event-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9SDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9STP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9SjP3Eei3W8hk9dX2TQ" id="google-calendar-update-event-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9SzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-update-event-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckODP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIckOTP3Eei3W8hk9dX2TQ" id="google-calendar-delete-event-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckOjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-delete-event-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckOzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckSzP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckTDP3Eei3W8hk9dX2TQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckTTP3Eei3W8hk9dX2TQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckTjP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckTzP3Eei3W8hk9dX2TQ" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckUDP3Eei3W8hk9dX2TQ" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckUTP3Eei3W8hk9dX2TQ" id="OTHER"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUjP3Eei3W8hk9dX2TQ" name="emailServerUseSSL" value="false" typeClassname="java.lang.Boolean"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUzP3Eei3W8hk9dX2TQ" name="emailServerUsername" value="me@mydomain.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVDP3Eei3W8hk9dX2TQ" name="emailServerPort" value="2525" typeClassname="java.lang.Integer"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVTP3Eei3W8hk9dX2TQ" name="emailServerPassword" value="use_fake_smtp" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVjP3Eei3W8hk9dX2TQ" name="emailServerAddress" value="127.0.0.1" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVzP3Eei3W8hk9dX2TQ" name="emailNotificationSender" value="noreply@mydomain.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWDP3Eei3W8hk9dX2TQ" name="emailHRAddress" value="hr@mydomain.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWTP3Eei3W8hk9dX2TQ" name="calendarApplicationName" value="Bonitasoft-NewVacationRequest/1.4.0" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWjP3Eei3W8hk9dX2TQ" name="calendarCalendarId" value="mydomain.com_4gc5656x7f57cfsrejgb@group.calendar.google.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWzP3Eei3W8hk9dX2TQ" name="calendarServiceAccountId" value="65654445676456-cg7867cgh867xrjgfxfjkhr@developer.gserviceaccount.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXDP3Eei3W8hk9dX2TQ" name="calendarServiceAccountP12File" value="/path/to/p12/file.p12" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXTP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
+      </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQyga0UNEeeJkrA3PIO9Tw" name="emailServerUseSSL" typeClassname="java.lang.Boolean"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbEUNEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbUUNEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
