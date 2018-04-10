@@ -20,6 +20,7 @@ target/
 /web_widgets/.metadata
 /web_fragments/.metadata
 /web_page/.metadata
+/web_page/*/js
 
 #bdm jar dependency is regenerate from bom.xml file
 /lib/bdm-client-pojo.jar
