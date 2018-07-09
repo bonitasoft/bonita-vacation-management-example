@@ -7,7 +7,7 @@ bin
 /src-providedGroovy
 /template
 /h2_database
-#/process_configurations
+/process_configurations
 /META-INF
 .settings
 target/
