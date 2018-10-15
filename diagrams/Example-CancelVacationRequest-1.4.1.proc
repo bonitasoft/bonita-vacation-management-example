@@ -167,7 +167,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt--IEUNEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_Zt--IUUNEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt--IkUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt--IkUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt--I0UNEeeJkrA3PIO9Tw" key="to">
@@ -481,7 +481,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt_lJUUNEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_Zt_lJkUNEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt_lJ0UNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt_lJ0UNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt_lKEUNEeeJkrA3PIO9Tw" key="to">
@@ -561,7 +561,7 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt_lW0UNEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_Zt_lXEUNEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt_lXUUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_Zt_lXUUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Zt_lXkUNEeeJkrA3PIO9Tw" key="to">
@@ -712,7 +712,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_ZuAMKkUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_ZuAMK0UNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_KcWuwDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_KcWuwDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.8.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_KcWuwTP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_KcWuwjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_KcWuwzP3Eei3W8hk9dX2TQ">
@@ -768,7 +768,7 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV8jP3Eei3W8hk9dX2TQ" name="emailServerPort" value="2525" typeClassname="java.lang.Integer"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV8zP3Eei3W8hk9dX2TQ" name="emailServerUsername" value="me@mydomain.com" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV9DP3Eei3W8hk9dX2TQ" name="emailServerUseSSL" value="false" typeClassname="java.lang.Boolean"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV9TP3Eei3W8hk9dX2TQ" name="emailNotificationSender" value="noreply@mydomain.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV9TP3Eei3W8hk9dX2TQ" name="emailNotificationSender" value="noreply@mydomain.com" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV9jP3Eei3W8hk9dX2TQ" name="emailHRAddress" value="hr@mydomain.com" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV9zP3Eei3W8hk9dX2TQ" name="calendarApplicationName" value="Bonitasoft-NewVacationRequest/1.4.1" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_KcXV-DP3Eei3W8hk9dX2TQ" name="calendarCalendarId" value="mydomain.com_4gc5656x7f57cfsrejgb@group.calendar.google.com" typeClassname="java.lang.String"/>
@@ -781,7 +781,7 @@
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMLkUNEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAML0UNEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMMEUNEeeJkrA3PIO9Tw" name="emailServerUseSSL" typeClassname="java.lang.Boolean"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMMUUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMMUUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMMkUNEeeJkrA3PIO9Tw" name="emailHRAddress" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMM0UNEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_ZuAMNEUNEeeJkrA3PIO9Tw" name="calendarCalendarId" typeClassname="java.lang.String"/>

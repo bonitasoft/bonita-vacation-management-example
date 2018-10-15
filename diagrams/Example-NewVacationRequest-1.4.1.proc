@@ -39,12 +39,12 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_T5X2oUUUEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2okUUEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2o0UUEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2pEUUEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2pEUUEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2pUUUEeeJkrA3PIO9Tw" key="smtpPort">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2pkUUEeeJkrA3PIO9Tw" name="emailServerPort" content="emailServerPort" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2p0UUEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2p0UUEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2qEUUEeeJkrA3PIO9Tw" key="sslSupport">
@@ -57,17 +57,17 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2rUUUEeeJkrA3PIO9Tw" key="userName">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2rkUUEeeJkrA3PIO9Tw" name="emailServerUsername" content="emailServerUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2r0UUEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2r0UUEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2sEUUEeeJkrA3PIO9Tw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2sUUUEeeJkrA3PIO9Tw" name="emailServerPassword" content="emailServerPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2skUUEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2skUUEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2s0UUEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2tEUUEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2tUUUEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2tUUUEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2tkUUEeeJkrA3PIO9Tw" key="to">
@@ -393,12 +393,12 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ma5boUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5bo0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bpUUVEeeJkrA3PIO9Tw" key="smtpPort">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5bpkUVEeeJkrA3PIO9Tw" name="emailServerPort" content="emailServerPort" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bp0UVEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bp0UVEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bqEUVEeeJkrA3PIO9Tw" key="sslSupport">
@@ -411,17 +411,17 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5brUUVEeeJkrA3PIO9Tw" key="userName">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5brkUVEeeJkrA3PIO9Tw" name="emailServerUsername" content="emailServerUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5br0UVEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5br0UVEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bsEUVEeeJkrA3PIO9Tw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5bsUUVEeeJkrA3PIO9Tw" name="emailServerPassword" content="emailServerPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bskUVEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bskUVEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bs0UVEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5btEUVEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5btUUVEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5btUUVEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5btkUVEeeJkrA3PIO9Tw" key="to">
@@ -474,12 +474,12 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ov0roUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0ro0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rpUUVEeeJkrA3PIO9Tw" key="smtpPort">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0rpkUVEeeJkrA3PIO9Tw" name="emailServerPort" content="emailServerPort" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rp0UVEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rp0UVEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rqEUVEeeJkrA3PIO9Tw" key="sslSupport">
@@ -492,17 +492,17 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rrUUVEeeJkrA3PIO9Tw" key="userName">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0rrkUVEeeJkrA3PIO9Tw" name="emailServerUsername" content="emailServerUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rr0UVEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rr0UVEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rsEUVEeeJkrA3PIO9Tw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0rsUUVEeeJkrA3PIO9Tw" name="emailServerPassword" content="emailServerPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rskUVEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rskUVEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rs0UVEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0rtEUVEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rtUUVEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rtUUVEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rtkUVEeeJkrA3PIO9Tw" key="to">
@@ -555,12 +555,12 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2eQVEUUWEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVEkUWEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVE0UWEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVFEUWEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVFEUWEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVFUUWEeeJkrA3PIO9Tw" key="smtpPort">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVFkUWEeeJkrA3PIO9Tw" name="emailServerPort" content="emailServerPort" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVF0UWEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVF0UWEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVGEUWEeeJkrA3PIO9Tw" key="sslSupport">
@@ -573,17 +573,17 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVHUUWEeeJkrA3PIO9Tw" key="userName">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVHkUWEeeJkrA3PIO9Tw" name="emailServerUsername" content="emailServerUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVH0UWEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVH0UWEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVIEUWEeeJkrA3PIO9Tw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVIUUWEeeJkrA3PIO9Tw" name="emailServerPassword" content="emailServerPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVIkUWEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVIkUWEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVI0UWEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVJEUWEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVJUUWEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVJUUWEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVJkUWEeeJkrA3PIO9Tw" key="to">
@@ -682,12 +682,12 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DvBnkUUXEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnkkUXEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnk0UXEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnlEUXEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnlEUXEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnlUUXEeeJkrA3PIO9Tw" key="smtpPort">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnlkUXEeeJkrA3PIO9Tw" name="emailServerPort" content="emailServerPort" type="TYPE_PARAMETER" returnType="java.lang.Integer" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnl0UXEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnl0UXEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnmEUXEeeJkrA3PIO9Tw" key="sslSupport">
@@ -700,17 +700,17 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnnUUXEeeJkrA3PIO9Tw" key="userName">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnnkUXEeeJkrA3PIO9Tw" name="emailServerUsername" content="emailServerUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnn0UXEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnn0UXEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnoEUXEeeJkrA3PIO9Tw" key="password">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnoUUXEeeJkrA3PIO9Tw" name="emailServerPassword" content="emailServerPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnokUXEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnokUXEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBno0UXEeeJkrA3PIO9Tw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnpEUXEeeJkrA3PIO9Tw" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnpUUXEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnpUUXEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnpkUXEeeJkrA3PIO9Tw" key="to">
@@ -1185,7 +1185,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.8.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_oIb9ITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9IjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_oIb9IzP3Eei3W8hk9dX2TQ">
@@ -1284,12 +1284,12 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckTzP3Eei3W8hk9dX2TQ" id="GROOVY_SCRIPT"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckUDP3Eei3W8hk9dX2TQ" id="VALIDATOR"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckUTP3Eei3W8hk9dX2TQ" id="OTHER"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUjP3Eei3W8hk9dX2TQ" name="emailServerUseSSL" value="false" typeClassname="java.lang.Boolean"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUzP3Eei3W8hk9dX2TQ" name="emailServerUsername" value="me@mydomain.com" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVDP3Eei3W8hk9dX2TQ" name="emailServerPort" value="2525" typeClassname="java.lang.Integer"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVTP3Eei3W8hk9dX2TQ" name="emailServerPassword" value="use_fake_smtp" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVjP3Eei3W8hk9dX2TQ" name="emailServerAddress" value="127.0.0.1" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVzP3Eei3W8hk9dX2TQ" name="emailNotificationSender" value="noreply@mydomain.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUjP3Eei3W8hk9dX2TQ" name="emailServerUseSSL" value="" typeClassname="java.lang.Boolean"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckUzP3Eei3W8hk9dX2TQ" name="emailServerUsername" value="" typeClassname="java.lang.String" description="Username for the email server."/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVDP3Eei3W8hk9dX2TQ" name="emailServerPort" value="" typeClassname="java.lang.Integer" description="Email server port number."/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVTP3Eei3W8hk9dX2TQ" name="emailServerPassword" value="" typeClassname="java.lang.String" description="Password for the email server."/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVjP3Eei3W8hk9dX2TQ" name="emailServerAddress" value="" typeClassname="java.lang.String" description="SMTP address of the email server."/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_oIckVzP3Eei3W8hk9dX2TQ" name="emailNotificationSender" value="noreply@mydomain.com" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWDP3Eei3W8hk9dX2TQ" name="emailHRAddress" value="hr@mydomain.com" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWTP3Eei3W8hk9dX2TQ" name="calendarApplicationName" value="Bonitasoft-NewVacationRequest/1.4.0" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckWjP3Eei3W8hk9dX2TQ" name="calendarCalendarId" value="mydomain.com_4gc5656x7f57cfsrejgb@group.calendar.google.com" typeClassname="java.lang.String"/>
@@ -1298,11 +1298,11 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXTP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
       </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQyga0UNEeeJkrA3PIO9Tw" name="emailServerUseSSL" typeClassname="java.lang.Boolean"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbEUNEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbUUNEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbkUNEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygb0UNEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
-      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygcEUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String"/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbEUNEeeJkrA3PIO9Tw" name="emailServerUsername" typeClassname="java.lang.String" description="Username for the email server."/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbUUNEeeJkrA3PIO9Tw" name="emailServerPort" typeClassname="java.lang.Integer" description="Email server port number."/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygbkUNEeeJkrA3PIO9Tw" name="emailServerPassword" typeClassname="java.lang.String" description="Password for the email server."/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygb0UNEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_WQygcEUNEeeJkrA3PIO9Tw" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygcUUNEeeJkrA3PIO9Tw" name="emailHRAddress" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygckUNEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_WQygc0UNEeeJkrA3PIO9Tw" name="calendarCalendarId" typeClassname="java.lang.String"/>
@@ -1610,22 +1610,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFr0UNEeeJkrA3PIO9Tw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WQzFsEUNEeeJkrA3PIO9Tw" id="(0.5,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WQzFsUUNEeeJkrA3PIO9Tw" id="(0.5,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFskUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFOUUNEeeJkrA3PIO9Tw" target="_WQygvEUNEeeJkrA3PIO9Tw">
-      <styles xmi:type="notation:FontStyle" xmi:id="_WQzFs0UNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFtEUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFtUUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFbEUNEeeJkrA3PIO9Tw" target="_WQygz0UNEeeJkrA3PIO9Tw">
-      <styles xmi:type="notation:FontStyle" xmi:id="_WQzFtkUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFt0UNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFuEUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFVEUNEeeJkrA3PIO9Tw" target="_WQyg0kUNEeeJkrA3PIO9Tw">
-      <styles xmi:type="notation:FontStyle" xmi:id="_WQzFuUUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFukUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFu0UNEeeJkrA3PIO9Tw" type="4003" source="_WQzFP0UNEeeJkrA3PIO9Tw" target="_WQzFMkUNEeeJkrA3PIO9Tw">
-      <styles xmi:type="notation:FontStyle" xmi:id="_WQzFvEUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFvUUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_WQzFvkUNEeeJkrA3PIO9Tw" type="4001" element="_WQygJUUNEeeJkrA3PIO9Tw" source="_WQygq0UNEeeJkrA3PIO9Tw" target="_WQygsUUNEeeJkrA3PIO9Tw" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_WQzFv0UNEeeJkrA3PIO9Tw" type="6001" element="_WQygJUUNEeeJkrA3PIO9Tw">
