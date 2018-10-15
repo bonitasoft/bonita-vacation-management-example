@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E362E302D303032372E372E307370">
-    <elements xmi:type="process:Pool" xmi:id="_VInVIEUNEeeJkrA3PIO9Tw" name="Remove All Business Data" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="1.4.1">
+  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E382E302D303032372E382E307370">
+    <elements xmi:type="process:Pool" xmi:id="_VInVIEUNEeeJkrA3PIO9Tw" name="Remove All Business Data" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_VInVIUUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_VInVXUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_VInVIkUNEeeJkrA3PIO9Tw" name="Start" outgoing="_VInVWkUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVI0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_VInVJEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_VInVJUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_VInVJkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_VInVJ0UNEeeJkrA3PIO9Tw" name="End" incoming="_VInVV0UNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVKEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_VInVKUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_VInVKkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_VInVK0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_VInVLEUNEeeJkrA3PIO9Tw" name="Remove all" outgoing="_VInVV0UNEeeJkrA3PIO9Tw" incoming="_VInVWkUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVLUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_VInVLkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_VInVL0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_VInVMEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -42,8 +39,6 @@
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_VInVQEUNEeeJkrA3PIO9Tw" text="Purpose of this process is to reset the Business Data tables.&#xA;&#xA;This process have two multiple business variables: VacationRequet and VacationAvailable. Both are initialize with all instances available (actually we use a static value of 4096 entries for simplicity).&#xA;&#xA;An operation is defined on the step to delete all existing entries for both variables."/>
       </elements>
-      <mandatorySymbol xmi:type="expression:Expression" xmi:id="_VInVQUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-      <mandatoryLabel xmi:type="expression:Expression" xmi:id="_VInVQkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <data xmi:type="process:BusinessObjectData" xmi:id="_VInVQ0UNEeeJkrA3PIO9Tw" name="vacationRequests" multiple="true" dataType="_VInVdkUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest">
         <defaultValue xmi:type="expression:Expression" xmi:id="_VInVREUNEeeJkrA3PIO9Tw" name="VacationRequest.find" content="SELECT v&#xA;FROM VacationRequest v&#xA;ORDER BY v.persistenceId" interpreter="GROOVY" type="TYPE_QUERY_BUSINESS_DATA" returnType="java.util.List">
           <referencedElements xmi:type="expression:Expression" xmi:id="_VInVRUUNEeeJkrA3PIO9Tw" name="startIndex" content="startIndex" type="QUERY_PARAM_TYPE" returnType="java.lang.Integer" returnTypeFixed="true">
@@ -64,16 +59,12 @@
           </referencedElements>
         </defaultValue>
       </data>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVT0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-      <confirmationMessage xmi:type="expression:Expression" xmi:id="_VInVUEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_VInVUUUNEeeJkrA3PIO9Tw">
         <targetForm xmi:type="expression:Expression" xmi:id="_VInVUkUNEeeJkrA3PIO9Tw" name="removeAllBusinessData" content="49d3f3e3-1beb-4419-bc17-e3bdef65c61f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVU0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_VInVVEUNEeeJkrA3PIO9Tw">
         <targetForm xmi:type="expression:Expression" xmi:id="_VInVVUUNEeeJkrA3PIO9Tw" name="removeAllBusinessDataOverview" content="8a884891-029c-4948-947a-5088644915fc" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VInVVkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <connections xmi:type="process:SequenceFlow" xmi:id="_VInVV0UNEeeJkrA3PIO9Tw" target="_VInVJ0UNEeeJkrA3PIO9Tw" source="_VInVLEUNEeeJkrA3PIO9Tw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_VInVWEUNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_VInVWUUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
