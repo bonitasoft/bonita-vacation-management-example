@@ -1,0 +1,19 @@
+BCD Configurations
+==================
+
+This directory may contain Bonita Continuous Delivery (BCD) configurations
+used to build and deploy this repository artifacts on different environments
+(eg. Development, Test, Staging, Production).
+
+Configuration files in this directory are encrypted with Ansible Vault.
+Then you may set your environment for Ansible Vault as follows:
+
+    `ANSIBLE_VAULT_PASSWORD_FILE=/path/to/.bcd_vault_password.txt`
+
+(adapt the above path accordingly)
+
+
+WARNING! This example repository contains a `.bcd_vault_password.txt` file
+         **for demo purposes only**. You must NOT store this file in your
+         repository during normal operations.
+
