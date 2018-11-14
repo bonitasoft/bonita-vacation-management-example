@@ -313,7 +313,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_Xfl0aEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Xfl0aUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Test" version="7.8.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_hfesITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_hfesIjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_hfesIzP3Eei3W8hk9dX2TQ">
@@ -359,6 +359,52 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_hffTTTP3Eei3W8hk9dX2TQ" name="calendarServiceAccountId" value="65654445676456-cg7867cgh867xrjgfxfjkhr@developer.gserviceaccount.com" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_hffTTjP3Eei3W8hk9dX2TQ" name="calendarServiceAccountP12File" value="/path/to/p12/file.p12" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_hffTTzP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
+      </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_jpvIMOgoEeiFb7LWyoBoVw" name="Staging" version="7.8.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_jpvITOgoEeiFb7LWyoBoVw">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_jpvITegoEeiFb7LWyoBoVw" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_jpvITugoEeiFb7LWyoBoVw">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_jpvIT-goEeiFb7LWyoBoVw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_jpvIUOgoEeiFb7LWyoBoVw"/>
+            <users xmi:type="actormapping:Users" xmi:id="_jpvIUegoEeiFb7LWyoBoVw"/>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_jpvIMegoEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIMugoEeiFb7LWyoBoVw" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIM-goEeiFb7LWyoBoVw" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_jpvINOgoEeiFb7LWyoBoVw" id="google-calendar-update-event-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvINegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-update-event-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvINugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIN-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIO-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIP-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQ-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIROgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIRegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIRugoEeiFb7LWyoBoVw" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIR-goEeiFb7LWyoBoVw" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvISOgoEeiFb7LWyoBoVw" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvISegoEeiFb7LWyoBoVw" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvISugoEeiFb7LWyoBoVw" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIS-goEeiFb7LWyoBoVw" id="OTHER"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_jpvvQOgoEeiFb7LWyoBoVw" name="calendarApplicationName" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_jpvvQegoEeiFb7LWyoBoVw" name="calendarCalendarId" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_jpvvQugoEeiFb7LWyoBoVw" name="calendarServiceAccountId" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_jpvvQ-goEeiFb7LWyoBoVw" name="calendarServiceAccountP12File" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_jpvvROgoEeiFb7LWyoBoVw" name="calendarServiceAccountUser" typeClassname="java.lang.String"/>
       </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_Xfl0akUNEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_Xfl0a0UNEeeJkrA3PIO9Tw" name="calendarCalendarId" typeClassname="java.lang.String"/>
