@@ -53,6 +53,46 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHjP3Eei3W8hk9dX2TQ" id="VALIDATOR"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RMrzHzP3Eei3W8hk9dX2TQ" id="OTHER"/>
       </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_cWuqAOjrEeij-uBVmmXbeA" name="Test" version="7.8.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_cW0woOjrEeij-uBVmmXbeA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_cW0woejrEeij-uBVmmXbeA" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_cW0woujrEeij-uBVmmXbeA">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_cW0wo-jrEeij-uBVmmXbeA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_cW0wpOjrEeij-uBVmmXbeA"/>
+            <users xmi:type="actormapping:Users" xmi:id="_cW0wpejrEeij-uBVmmXbeA"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvREOjrEeij-uBVmmXbeA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvREejrEeij-uBVmmXbeA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvREujrEeij-uBVmmXbeA" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvRE-jrEeij-uBVmmXbeA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvRFOjrEeij-uBVmmXbeA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvRFejrEeij-uBVmmXbeA" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvRFujrEeij-uBVmmXbeA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_cWvRF-jrEeij-uBVmmXbeA" id="OTHER"/>
+      </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_nR2TwOjrEeij-uBVmmXbeA" name="Staging" version="7.8.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_nR2TyejrEeij-uBVmmXbeA">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_nR2TyujrEeij-uBVmmXbeA" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_nR2Ty-jrEeij-uBVmmXbeA">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_nR2TzOjrEeij-uBVmmXbeA"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_nR2TzejrEeij-uBVmmXbeA"/>
+            <users xmi:type="actormapping:Users" xmi:id="_nR2TzujrEeij-uBVmmXbeA"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TwejrEeij-uBVmmXbeA" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TwujrEeij-uBVmmXbeA" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2Tw-jrEeij-uBVmmXbeA" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TxOjrEeij-uBVmmXbeA" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TxejrEeij-uBVmmXbeA" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TxujrEeij-uBVmmXbeA" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2Tx-jrEeij-uBVmmXbeA" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nR2TyOjrEeij-uBVmmXbeA" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_Yl2RIEUNEeeJkrA3PIO9Tw"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_Yl2RIUUNEeeJkrA3PIO9Tw">
         <name xmi:type="expression:Expression" xmi:id="_Yl2RIkUNEeeJkrA3PIO9Tw" content="" returnTypeFixed="true"/>
