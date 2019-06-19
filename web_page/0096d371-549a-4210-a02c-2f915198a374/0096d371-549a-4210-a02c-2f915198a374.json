@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.7.25",
-  "previousDesignerVersion" : "1.5.7",
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
   "id" : "0096d371-549a-4210-a02c-2f915198a374",
   "name" : "intiateVacationAvailable",
-  "lastUpdate" : 1522399121508,
+  "lastUpdate" : 1560948764992,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -32,6 +32,7 @@
       }
     },
     "reference" : "a1ec005c-2ae3-41cc-8303-5c679561e6a2",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "formContainer",
@@ -57,6 +58,7 @@
       }
     },
     "reference" : "cda6f6cc-436a-471e-8ba8-789e3e526f99",
+    "hasValidationError" : false,
     "id" : "pbFormContainer",
     "container" : {
       "type" : "container",
@@ -74,6 +76,7 @@
         }
       },
       "reference" : "647c2fdc-2f0e-427d-989e-50aae8ac754e",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -166,6 +169,7 @@
           }
         },
         "reference" : "1493d13a-807c-4add-bbf0-a64951005caa",
+        "hasValidationError" : false,
         "id" : "pbButton"
       } ] ]
     }
@@ -194,9 +198,26 @@
       "allowHTML" : {
         "type" : "constant",
         "value" : true
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
       }
     },
     "reference" : "0e74d1b5-4ef5-4c44-926e-b6467ee8b77e",
+    "hasValidationError" : false,
     "id" : "pbText"
   } ], [ {
     "type" : "component",
@@ -223,9 +244,26 @@
       "allowHTML" : {
         "type" : "constant",
         "value" : true
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
       }
     },
     "reference" : "bce7bf3a-3f0b-4c52-9e97-866d57d43c4f",
+    "hasValidationError" : false,
     "id" : "pbText"
   } ] ],
   "assets" : [ {
@@ -263,6 +301,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "0096d371-549a-4210-a02c-2f915198a374",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

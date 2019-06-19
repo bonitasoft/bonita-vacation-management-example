@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.7.25",
-  "previousDesignerVersion" : "1.5.7",
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
   "id" : "05f4d4c6-6624-45d8-a97a-1425c3d7c2ce",
   "name" : "initiateVacationAvailableOverview",
-  "lastUpdate" : 1522399121462,
+  "lastUpdate" : 1560948764960,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -32,6 +32,7 @@
       }
     },
     "reference" : "6b3ef5dc-a961-4cfb-be8d-2ddd561feae9",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "component",
@@ -64,6 +65,7 @@
       }
     },
     "reference" : "5a98543c-407c-47b7-935f-0375cbfce6fb",
+    "hasValidationError" : false,
     "id" : "pbTable"
   } ] ],
   "assets" : [ {
@@ -87,6 +89,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "05f4d4c6-6624-45d8-a97a-1425c3d7c2ce",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

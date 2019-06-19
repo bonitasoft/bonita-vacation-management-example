@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.7.25",
-  "previousDesignerVersion" : "1.5.7",
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
   "id" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
   "name" : "reviewRequestForm",
-  "lastUpdate" : 1522399121369,
+  "lastUpdate" : 1560948764879,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -32,6 +32,7 @@
       }
     },
     "reference" : "02d34529-d262-4104-8c10-73104d7cfbd5",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "component",
@@ -93,6 +94,7 @@
       }
     },
     "reference" : "e0a515f1-91dc-4a03-8c6c-6969e0e3a162",
+    "hasValidationError" : false,
     "id" : "pbDatePicker"
   }, {
     "type" : "component",
@@ -163,6 +165,7 @@
       }
     },
     "reference" : "98f44674-4af1-4bcc-acf9-7b4ce02afba7",
+    "hasValidationError" : false,
     "id" : "pbInput"
   } ], [ {
     "type" : "component",
@@ -224,6 +227,7 @@
       }
     },
     "reference" : "4f799236-afd3-490f-af19-5a5bb329c4af",
+    "hasValidationError" : false,
     "id" : "pbDatePicker"
   } ], [ {
     "type" : "formContainer",
@@ -241,6 +245,7 @@
       }
     },
     "reference" : "6aed9637-3547-4ea9-aaa6-5f9fed2d0c35",
+    "hasValidationError" : false,
     "id" : "pbFormContainer",
     "container" : {
       "type" : "container",
@@ -249,6 +254,7 @@
       },
       "propertyValues" : { },
       "reference" : "3134e7d1-905d-4c6c-966f-586dc89e4b50",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -308,6 +314,7 @@
           }
         },
         "reference" : "a94848df-8ec0-4eb6-a0b2-798a8cd9f01a",
+        "hasValidationError" : false,
         "id" : "pbRadioButtons"
       } ], [ {
         "type" : "component",
@@ -403,6 +410,7 @@
           }
         },
         "reference" : "3f55778d-8566-4fef-bcf6-a3d36b4ed499",
+        "hasValidationError" : false,
         "id" : "pbInput"
       } ], [ {
         "type" : "component",
@@ -493,6 +501,7 @@
           }
         },
         "reference" : "99ad7917-7c44-47e7-9a9a-3f78d34db7f3",
+        "hasValidationError" : false,
         "id" : "pbButton"
       } ] ]
     }
@@ -533,6 +542,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.7.25",
-  "previousDesignerVersion" : "1.5.7",
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
   "id" : "8a884891-029c-4948-947a-5088644915fc",
   "name" : "removeAllBusinessDataOverview",
-  "lastUpdate" : 1522399121117,
+  "lastUpdate" : 1560948764735,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -32,6 +32,7 @@
       }
     },
     "reference" : "6b3ef5dc-a961-4cfb-be8d-2ddd561feae9",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "component",
@@ -64,6 +65,7 @@
       }
     },
     "reference" : "5a98543c-407c-47b7-935f-0375cbfce6fb",
+    "hasValidationError" : false,
     "id" : "pbTable"
   } ], [ {
     "type" : "component",
@@ -93,6 +95,7 @@
       }
     },
     "reference" : "9870faa7-7812-4742-b26d-73ca08a33ab4",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "component",
@@ -125,6 +128,7 @@
       }
     },
     "reference" : "5625c3bb-c227-4f40-9fd3-ea29e1f47619",
+    "hasValidationError" : false,
     "id" : "pbTable"
   } ] ],
   "assets" : [ {
@@ -153,6 +157,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "8a884891-029c-4948-947a-5088644915fc",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

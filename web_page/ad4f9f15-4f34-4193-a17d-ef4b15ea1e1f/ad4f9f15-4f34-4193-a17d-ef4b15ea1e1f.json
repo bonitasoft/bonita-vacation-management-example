@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.7.25",
-  "previousDesignerVersion" : "1.5.7",
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.7.25",
   "id" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
   "name" : "newVacationRequestForm",
-  "lastUpdate" : 1522399121547,
+  "lastUpdate" : 1560948765024,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -32,6 +32,7 @@
       }
     },
     "reference" : "70634019-90fa-4f5e-ac26-7e027eb085a5",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "formContainer",
@@ -49,6 +50,7 @@
       }
     },
     "reference" : "2b80c18f-1689-47b6-8f16-3f3eb80d7429",
+    "hasValidationError" : false,
     "id" : "pbFormContainer",
     "container" : {
       "type" : "container",
@@ -57,6 +59,7 @@
       },
       "propertyValues" : { },
       "reference" : "0d192d19-1eed-4a03-9b11-de4fac9fc6c7",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -149,6 +152,7 @@
           }
         },
         "reference" : "070928b6-058a-4beb-81c0-2c97d38a4b8f",
+        "hasValidationError" : false,
         "id" : "pbDatePicker"
       }, {
         "type" : "component",
@@ -245,6 +249,7 @@
           }
         },
         "reference" : "667bfffc-f35f-4b04-9c24-31c26530e0b7",
+        "hasValidationError" : false,
         "id" : "pbInput"
       } ], [ {
         "type" : "component",
@@ -337,6 +342,7 @@
           }
         },
         "reference" : "f33ed18f-9c44-41c4-adac-be1feeafe7ff",
+        "hasValidationError" : false,
         "id" : "pbDatePicker"
       } ], [ {
         "type" : "component",
@@ -427,6 +433,7 @@
           }
         },
         "reference" : "f1a2698f-ba8e-4f2a-a55b-da2ff0fdd643",
+        "hasValidationError" : false,
         "id" : "pbButton"
       } ] ]
     }
@@ -452,6 +459,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

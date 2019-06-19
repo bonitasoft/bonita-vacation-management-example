@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E382E302D303032372E382E307370">
+  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.9.0" bonitaModelVersion="7.9.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E392E302D303032372E392E307370">
     <elements xmi:type="process:Pool" xmi:id="_VInVIEUNEeeJkrA3PIO9Tw" name="Remove All Business Data" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_VInVIUUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_VInVXUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_VInVIkUNEeeJkrA3PIO9Tw" name="Start" outgoing="_VInVWkUNEeeJkrA3PIO9Tw">
@@ -95,7 +95,7 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_s7_yzjP3Eei3W8hk9dX2TQ" id="VALIDATOR"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_s7_yzzP3Eei3W8hk9dX2TQ" id="OTHER"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_eD7ysOjrEeij-uBVmmXbeA" name="Test" version="7.8.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_eD7ysOjrEeij-uBVmmXbeA" name="Test" version="7.9.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_eD9A0OjrEeij-uBVmmXbeA">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_eD9A0ejrEeij-uBVmmXbeA" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_eD9n4OjrEeij-uBVmmXbeA">

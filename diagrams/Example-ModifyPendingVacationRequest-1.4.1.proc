@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_XflzkEUNEeeJkrA3PIO9Tw" name="Example-ModifyPendingVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.8.0" bonitaModelVersion="7.8.0-002" configId="ACED00057400344578616D706C652D4D6F6469667950656E64696E675661636174696F6E52657175657374372E382E302D303032372E382E307370">
+  <process:MainProcess xmi:id="_XflzkEUNEeeJkrA3PIO9Tw" name="Example-ModifyPendingVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.9.0" bonitaModelVersion="7.9.0-002" configId="ACED00057400344578616D706C652D4D6F6469667950656E64696E675661636174696F6E52657175657374372E392E302D303032372E392E307370">
     <elements xmi:type="process:Pool" xmi:id="_XflzkUUNEeeJkrA3PIO9Tw" name="Modify Pending Vacation Request" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_XflzkkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_Xfl0aUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_Xflzk0UNEeeJkrA3PIO9Tw" name="Start modify" outgoing="_Xfl0ZkUNEeeJkrA3PIO9Tw">
@@ -313,7 +313,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_Xfl0aEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Xfl0aUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Test" version="7.8.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Test" version="7.9.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_hfesITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_hfesIjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_hfesIzP3Eei3W8hk9dX2TQ">
