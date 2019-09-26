@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accessControlModel xmlns="http://documentation.bonitasoft.com/bdm-access-control-xml-schema/1.0">
+    <businessObjectRule businessObjectQualifiedName="com.company.model.VacationRequest">
+        <rule name="fullAccess" usingDynamicProfiles="false" description="Full access.">
+            <condition></condition>
+            <staticProfiles>
+                <profile>User</profile>
+                <profile>Administrator</profile>
+                <profile>Process manager</profile>
+            </staticProfiles>
+            <dynamicProfiles></dynamicProfiles>
+            <attributes businessObjectQualifiedName="com.company.model.VacationRequest">
+                <attribute name="requesterBonitaBPMId"/>
+                <attribute name="reviewerBonitaBPMId"/>
+                <attribute name="startDate"/>
+                <attribute name="returnDate"/>
+                <attribute name="numberOfDays"/>
+                <attribute name="status"/>
+                <attribute name="comments"/>
+                <attribute name="calendarEventId"/>
+                <attribute name="newRequestProcessInstanceId"/>
+            </attributes>
+        </rule>
+    </businessObjectRule>
+    <businessObjectRule businessObjectQualifiedName="com.company.model.VacationAvailable">
+        <rule name="fullAccess" usingDynamicProfiles="false" description="Full access">
+            <condition></condition>
+            <staticProfiles>
+                <profile>User</profile>
+                <profile>Administrator</profile>
+                <profile>Process manager</profile>
+            </staticProfiles>
+            <dynamicProfiles></dynamicProfiles>
+            <attributes businessObjectQualifiedName="com.company.model.VacationAvailable">
+                <attribute name="bonitaBPMId"/>
+                <attribute name="daysAvailableCounter"/>
+            </attributes>
+        </rule>
+    </businessObjectRule>
+</accessControlModel>
