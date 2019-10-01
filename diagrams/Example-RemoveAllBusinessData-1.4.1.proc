@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.9.0" bonitaModelVersion="7.9.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E392E302D303032372E392E307370">
+  <process:MainProcess xmi:id="_VImuEEUNEeeJkrA3PIO9Tw" name="Example-RemoveAllBusinessData" version="1.4.1" author="antoine" bonitaVersion="7.9.3" bonitaModelVersion="7.9.0-002" configId="ACED000574002D4578616D706C652D52656D6F7665416C6C427573696E65737344617461372E392E302D303032372E392E337370">
     <elements xmi:type="process:Pool" xmi:id="_VInVIEUNEeeJkrA3PIO9Tw" name="Remove All Business Data" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_VInVIUUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_VInVXUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_VInVIkUNEeeJkrA3PIO9Tw" name="Start" outgoing="_VInVWkUNEeeJkrA3PIO9Tw">
@@ -74,7 +74,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_VInVXEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_VInVXUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_s7_ywDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_s7_ywDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.9.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_s7_ywTP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_s7_ywjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_s7_ywzP3Eei3W8hk9dX2TQ">
@@ -115,7 +115,7 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_eD7yt-jrEeij-uBVmmXbeA" id="GROOVY_SCRIPT"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_eD7yuOjrEeij-uBVmmXbeA" id="OTHER"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_qfxoUOjrEeij-uBVmmXbeA" name="Staging" version="7.8.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_qfxoUOjrEeij-uBVmmXbeA" name="Staging" version="7.9.0-002" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_qfyPYOjrEeij-uBVmmXbeA">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_qfyPYejrEeij-uBVmmXbeA" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_qfyPYujrEeij-uBVmmXbeA">

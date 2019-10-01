@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="helloapp" version="1.0.0" profile="User" homePage="home" state="ACTIVATED" layout="custompage_HelloLayout" theme="custompage_customHelloTheme">
+        <displayName>Hello App</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_home" token="home"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="home">
+                <displayName>Home</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
