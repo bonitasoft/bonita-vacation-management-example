@@ -9,7 +9,7 @@
     <description>REST API extension that provide API to list vacation request submitted by employee managed by provided manager id</description>
     
     <properties>
-        <bonita.version>7.8.0</bonita.version>
+        <bonita.version>[7.9,)</bonita.version>
         <groovy.version>2.4.3-01</groovy.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
