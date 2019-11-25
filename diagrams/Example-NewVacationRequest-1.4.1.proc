@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.9.3" bonitaModelVersion="7.9.0-002" configId="ACED000574002A4578616D706C652D4E65775661636174696F6E52657175657374372E392E302D303032372E392E337370">
+  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED000574002C4578616D706C652D4E65775661636174696F6E52657175657374372E31302E302D303031372E31302E307370">
     <elements xmi:type="process:Pool" xmi:id="_WQx3EUUNEeeJkrA3PIO9Tw" name="New Vacation Request" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_WQx3EkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_WQygaUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_WQx3E0UNEeeJkrA3PIO9Tw" name="New Vacation Request Start" outgoing="_WQygIUUNEeeJkrA3PIO9Tw">
@@ -35,8 +35,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx3LEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx3LUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx3LkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_T5X2oEUUEeeJkrA3PIO9Tw" name="emailNotifyManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_T5X2oUUUEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_T5X2oEUUEeeJkrA3PIO9Tw" name="emailNotifyManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_T5X2oUUUEeeJkrA3PIO9Tw" definitionId="email" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2okUUEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2o0UUEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2pEUUEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
@@ -102,6 +102,11 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2ykUUEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_T5X2y0UUEeeJkrA3PIO9Tw"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RGH6GQ-qEeqvf_q4jb_L_Q" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_RGIhOA-qEeqvf_q4jb_L_Q" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_RGIhOQ-qEeqvf_q4jb_L_Q" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
+                </expression>
               </parameters>
             </configuration>
           </connectors>
@@ -389,8 +394,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4F0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4GEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4GUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_ma5boEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestApproved" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ma5boUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_ma5boEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestApproved" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ma5boUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5bo0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
@@ -457,6 +462,11 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bykUVEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_ma5by0UVEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RGH6Vw-qEeqvf_q4jb_L_Q" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_RGIhOg-qEeqvf_q4jb_L_Q" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_RGIhOw-qEeqvf_q4jb_L_Q" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
+                </expression>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4RkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -470,8 +480,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4TkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4T0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4UEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_ov0roEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ov0roUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_ov0roEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ov0roUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0ro0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
@@ -538,6 +548,11 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rykUVEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_ov0ry0UVEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RGH6aQ-qEeqvf_q4jb_L_Q" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_RGIhPA-qEeqvf_q4jb_L_Q" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_RGIhPQ-qEeqvf_q4jb_L_Q" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
+                </expression>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4fUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -551,8 +566,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4hUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4hkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4h0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_2eQVEEUWEeeJkrA3PIO9Tw" name="emailNotifyHRRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2eQVEUUWEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_2eQVEEUWEeeJkrA3PIO9Tw" name="emailNotifyHRRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2eQVEUUWEeeJkrA3PIO9Tw" definitionId="email" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVEkUWEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVE0UWEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVFEUWEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
@@ -621,6 +636,11 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVO0UWEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_2eQVPEUWEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RGH6ew-qEeqvf_q4jb_L_Q" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_RGIhPg-qEeqvf_q4jb_L_Q" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_RGIhPw-qEeqvf_q4jb_L_Q" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
+                </expression>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4tUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -678,8 +698,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeTUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeTkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeT0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_DvBnkEUXEeeJkrA3PIO9Tw" name="emailRemindManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DvBnkUUXEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_DvBnkEUXEeeJkrA3PIO9Tw" name="emailRemindManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DvBnkUUXEeeJkrA3PIO9Tw" definitionId="email" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnkkUXEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnk0UXEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnlEUXEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String" description="SMTP address of the email server."/>
@@ -745,6 +765,11 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnukUXEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_DvBnu0UXEeeJkrA3PIO9Tw"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RGH6jQ-qEeqvf_q4jb_L_Q" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_RGIhQA-qEeqvf_q4jb_L_Q" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_RGIhQQ-qEeqvf_q4jb_L_Q" name="emailNotificationSender" typeClassname="java.lang.String" description="Email address to be used as the notification sender."/>
+                </expression>
               </parameters>
             </configuration>
           </connectors>
@@ -1185,7 +1210,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Test" version="7.9.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Test" version="7.10.0-001" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_oIb9ITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9IjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_oIb9IzP3Eei3W8hk9dX2TQ">
@@ -1205,10 +1230,10 @@
           </actorMapping>
         </actorMappings>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LDP3Eei3W8hk9dX2TQ" type="ACTOR_FILTER" definitionId="initiator-manager" definitionVersion="1.0.0" implementationId="initiator-manager-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LTP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.1.1"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LjP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-create-event" definitionVersion="1.0.0" implementationId="google-calendar-create-event-impl" implementationVersion="1.0.0"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LzP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9MDP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-delete-event" definitionVersion="1.0.0" implementationId="google-calendar-delete-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RGj-kA-qEeqvf_q4jb_L_Q" type="CONNECTOR" definitionId="email" definitionVersion="1.1.0" implementationId="email-impl" implementationVersion="1.2.1"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MTP3Eei3W8hk9dX2TQ" id="ACTOR_FILTER">
           <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MjP3Eei3W8hk9dX2TQ" id="initiator-manager-impl-1.0.0">
             <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9MzP3Eei3W8hk9dX2TQ" key="initiator-manager-impl -- 1.0.0" value="bonita-userfilter-initiator-manager-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
@@ -1272,9 +1297,9 @@
             <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
             <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_PELh0OOREem8qq3241H4gw" id="email-impl-1.1.1">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_PESPgOOREem8qq3241H4gw" key="email-impl -- 1.1.1" value="bonita-connector-email-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_PESPgeOREem8qq3241H4gw" key="email-impl -- 1.1.1" value="mail-1.4.7.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RGxZ8A-qEeqvf_q4jb_L_Q" id="email-impl-1.2.1">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RG1rYA-qEeqvf_q4jb_L_Q" key="email-impl -- 1.2.1" value="bonita-connector-email-1.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RG1rYQ-qEeqvf_q4jb_L_Q" key="email-impl -- 1.2.1" value="mail-1.4.7.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckSzP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
@@ -1297,7 +1322,7 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXDP3Eei3W8hk9dX2TQ" name="calendarServiceAccountP12File" value="/path/to/p12/file.p12" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXTP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_iHmAAOgoEeiFb7LWyoBoVw" name="Staging" version="7.9.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_iHmAAOgoEeiFb7LWyoBoVw" name="Staging" version="7.10.0-001" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_iHmnEOgoEeiFb7LWyoBoVw">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_iHmnEegoEeiFb7LWyoBoVw" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_iHmnEugoEeiFb7LWyoBoVw">
@@ -1317,10 +1342,10 @@
           </actorMapping>
         </actorMappings>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_iHmAAegoEeiFb7LWyoBoVw" type="ACTOR_FILTER" definitionId="initiator-manager" definitionVersion="1.0.0" implementationId="initiator-manager-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_iHmAAugoEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.1.1"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_iHmAA-goEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="google-calendar-v3-create-event" definitionVersion="1.0.0" implementationId="google-calendar-create-event-impl" implementationVersion="1.0.0"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_iHmABOgoEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_iHmABegoEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="google-calendar-v3-delete-event" definitionVersion="1.0.0" implementationId="google-calendar-delete-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_RLVw4A-qEeqvf_q4jb_L_Q" type="CONNECTOR" definitionId="email" definitionVersion="1.1.0" implementationId="email-impl" implementationVersion="1.2.1"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iHmABugoEeiFb7LWyoBoVw" id="ACTOR_FILTER">
           <children xmi:type="configuration:FragmentContainer" xmi:id="_iHmAB-goEeiFb7LWyoBoVw" id="initiator-manager-impl-1.0.0">
             <fragments xmi:type="configuration:Fragment" xmi:id="_iHmACOgoEeiFb7LWyoBoVw" key="initiator-manager-impl -- 1.0.0" value="bonita-userfilter-initiator-manager-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
@@ -1384,9 +1409,9 @@
             <fragments xmi:type="configuration:Fragment" xmi:id="_iHmAQegoEeiFb7LWyoBoVw" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
             <fragments xmi:type="configuration:Fragment" xmi:id="_iHmAQugoEeiFb7LWyoBoVw" key="google-calendar-delete-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_PMTjEOOREem8qq3241H4gw" id="email-impl-1.1.1">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_PMYbkOOREem8qq3241H4gw" key="email-impl -- 1.1.1" value="bonita-connector-email-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_PMYbkeOREem8qq3241H4gw" key="email-impl -- 1.1.1" value="mail-1.4.7.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_RLeTwA-qEeqvf_q4jb_L_Q" id="email-impl-1.2.1">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RLkaYA-qEeqvf_q4jb_L_Q" key="email-impl -- 1.2.1" value="bonita-connector-email-1.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_RLkaYQ-qEeqvf_q4jb_L_Q" key="email-impl -- 1.2.1" value="mail-1.4.7.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iHmAQ-goEeiFb7LWyoBoVw" id="DATA_TYPES"/>

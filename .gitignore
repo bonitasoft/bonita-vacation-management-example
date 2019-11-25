@@ -1,4 +1,5 @@
 
+
 bin
 .classpath
 /application_resources
@@ -34,3 +35,6 @@ node/
 node_modules/
 /web_fragments/*/*.js
 /web_widgets/*/*.js
+
+
+!/web_widgets/*/*.ctrl.js
