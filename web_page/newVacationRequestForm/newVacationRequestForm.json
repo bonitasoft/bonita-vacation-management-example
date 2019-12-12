@@ -1,9 +1,9 @@
 {
   "designerVersion" : "1.10.18",
   "previousDesignerVersion" : "1.9.24",
-  "id" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
-  "name" : "reviewRequestForm",
-  "lastUpdate" : 1574703456855,
+  "id" : "newVacationRequestForm",
+  "name" : "newVacationRequestForm",
+  "lastUpdate" : 1576192100236,
   "rows" : [
     [
       {
@@ -22,7 +22,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Review vacation request"
+            "value" : "Create a new vacation request"
           },
           "level" : {
             "type" : "constant",
@@ -33,211 +33,9 @@
             "value" : "left"
           }
         },
-        "reference" : "02d34529-d262-4104-8c10-73104d7cfbd5",
+        "reference" : "70634019-90fa-4f5e-ac26-7e027eb085a5",
         "hasValidationError" : false,
         "id" : "pbTitle"
-      }
-    ],
-    [
-      {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 4
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Start Date"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "placeholder" : {
-            "type" : "interpolation",
-            "value" : "MM/dd/yyyy"
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "vacationRequestBusinessData.startDate"
-          },
-          "dateFormat" : {
-            "type" : "constant",
-            "value" : "MM/dd/yyyy"
-          },
-          "showToday" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "todayLabel" : {
-            "type" : "interpolation",
-            "value" : "Today"
-          }
-        },
-        "reference" : "e0a515f1-91dc-4a03-8c6c-6969e0e3a162",
-        "hasValidationError" : false,
-        "id" : "pbDatePicker"
-      },
-      {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 4
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "minLength" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "maxLength" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Number of Days"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "placeholder" : {
-            "type" : "interpolation"
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "vacationRequestBusinessData.numberOfDays"
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "text"
-          },
-          "min" : {
-            "type" : "constant"
-          },
-          "max" : {
-            "type" : "constant"
-          },
-          "step" : {
-            "type" : "constant",
-            "value" : 1
-          }
-        },
-        "reference" : "98f44674-4af1-4bcc-acf9-7b4ce02afba7",
-        "hasValidationError" : false,
-        "id" : "pbInput"
-      }
-    ],
-    [
-      {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 4
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "readOnly" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "required" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Return Date"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "placeholder" : {
-            "type" : "interpolation",
-            "value" : "MM/dd/yyyy"
-          },
-          "value" : {
-            "type" : "variable",
-            "value" : "vacationRequestBusinessData.returnDate"
-          },
-          "dateFormat" : {
-            "type" : "constant",
-            "value" : "MM/dd/yyyy"
-          },
-          "showToday" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "todayLabel" : {
-            "type" : "interpolation",
-            "value" : "Today"
-          }
-        },
-        "reference" : "4f799236-afd3-490f-af19-5a5bb329c4af",
-        "hasValidationError" : false,
-        "id" : "pbDatePicker"
       }
     ],
     [
@@ -256,7 +54,7 @@
             "value" : false
           }
         },
-        "reference" : "6aed9637-3547-4ea9-aaa6-5f9fed2d0c35",
+        "reference" : "2b80c18f-1689-47b6-8f16-3f3eb80d7429",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -265,7 +63,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "3134e7d1-905d-4c6c-966f-586dc89e4b50",
+          "reference" : "0d192d19-1eed-4a03-9b11-de4fac9fc6c7",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -273,73 +71,7 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Status"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "inline" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "approved",
-                      "refused"
-                    ]
-                  },
-                  "displayedKey" : {
-                    "type" : "constant"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant"
-                  },
-                  "selectedValue" : {
-                    "type" : "variable",
-                    "value" : "formInput.statusContract"
-                  }
-                },
-                "reference" : "a94848df-8ec0-4eb6-a0b2-798a8cd9f01a",
-                "hasValidationError" : false,
-                "id" : "pbRadioButtons"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12
+                  "xs" : 4
                 },
                 "propertyValues" : {
                   "alignment" : {
@@ -356,7 +88,101 @@
                   },
                   "placeholder" : {
                     "type" : "constant",
-                    "value" : "For a refused request, a mandatory comment explaining why the request was refused. For an approved request, a comment is optional."
+                    "value" : "The first day of vacation."
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Start Date"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "type" : {
+                    "type" : "constant"
+                  },
+                  "forceUTC" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbDatePicker"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formData.startDateContract"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "MM/dd/yyyy"
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "todayLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Today"
+                  }
+                },
+                "reference" : "070928b6-058a-4beb-81c0-2c97d38a4b8f",
+                "hasValidationError" : false,
+                "id" : "pbDatePicker"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 6
+                },
+                "propertyValues" : {
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "placeholder" : {
+                    "type" : "constant",
+                    "value" : "The number of days of vacation, not including non-working days."
                   },
                   "class" : {
                     "type" : "constant",
@@ -364,7 +190,7 @@
                   },
                   "label" : {
                     "type" : "constant",
-                    "value" : "Comment"
+                    "value" : "Number of Days"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -372,7 +198,7 @@
                   },
                   "type" : {
                     "type" : "constant",
-                    "value" : "text"
+                    "value" : "number"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -384,7 +210,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.commentsContract"
+                    "value" : "formData.numberOfDaysContract"
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -403,8 +229,8 @@
                     "value" : false
                   },
                   "required" : {
-                    "type" : "expression",
-                    "value" : "formInput.statusContract === \"refused\""
+                    "type" : "constant",
+                    "value" : true
                   },
                   "minLength" : {
                     "type" : "constant",
@@ -419,7 +245,8 @@
                     "value" : false
                   },
                   "min" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : 1
                   },
                   "max" : {
                     "type" : "constant"
@@ -429,9 +256,105 @@
                     "value" : 1
                   }
                 },
-                "reference" : "3f55778d-8566-4fef-bcf6-a3d36b4ed499",
+                "reference" : "667bfffc-f35f-4b04-9c24-31c26530e0b7",
                 "hasValidationError" : false,
                 "id" : "pbInput"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 4
+                },
+                "propertyValues" : {
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "isDisplayed" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "placeholder" : {
+                    "type" : "constant",
+                    "value" : "The day the requester returns to work."
+                  },
+                  "class" : {
+                    "type" : "constant",
+                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.DatePickerWidget"
+                  },
+                  "label" : {
+                    "type" : "constant",
+                    "value" : "Return Date"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "type" : {
+                    "type" : "constant"
+                  },
+                  "forceUTC" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "widgetId" : {
+                    "type" : "constant",
+                    "value" : "pbDatePicker"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formData.returnDateContract"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "MM/dd/yyyy"
+                  },
+                  "readonly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "todayLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Today"
+                  }
+                },
+                "reference" : "f33ed18f-9c44-41c4-adac-be1feeafe7ff",
+                "hasValidationError" : false,
+                "id" : "pbDatePicker"
               }
             ],
             [
@@ -485,11 +408,11 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "formInput"
+                    "value" : "formData"
                   },
                   "readonly" : {
                     "type" : "constant",
@@ -523,7 +446,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "99ad7917-7c44-47e7-9a9a-3f78d34db7f3",
+                "reference" : "f1a2698f-ba8e-4f2a-a55b-da2ff0fdd643",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -535,14 +458,14 @@
   ],
   "assets" : [
     {
-      "id" : "22109d78-ac46-431a-b392-ec6aa300f73f",
+      "id" : "e0281c2f-3397-48a2-9cf9-76547b6b7c40",
       "name" : "ui-bootstrap-tpls-0.13.0.min.js",
       "type" : "js",
       "order" : 2,
       "external" : false
     },
     {
-      "id" : "ac67931f-df84-4d80-8494-c7f7a5547d1e",
+      "id" : "b84e1cd8-0ef8-4cf5-886e-1df984939854",
       "name" : "style.css",
       "type" : "css",
       "order" : 1,
@@ -551,40 +474,20 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "vacationRequestBusinessData" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.vacationRequest_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
+    "formData" : {
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"statusContract\" : \"\",\r",
-        "  \"commentsContract\" : \"\"\r",
+        "  \"startDateContract\" : null,\r",
+        "  \"returnDateContract\" : null,\r",
+        "  \"numberOfDaysContract\" : 0\r",
         "}"
-      ],
-      "exposed" : false
-    },
-    "context" : {
-      "type" : "url",
-      "value" : [
-        "/bonita/API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "taskId" : {
-      "type" : "urlparameter",
-      "value" : [
-        "id"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7993d6c3-5f3c-4404-8e8c-59d37f1ac672",
+  "uuid" : "ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
