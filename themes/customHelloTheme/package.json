@@ -10,7 +10,7 @@
     "node-sass": "4.11.0",
     "postcss-cli": "6.1.2",
     "autoprefixer": "9.5.0",
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "3.4.1",
     "font-awesome-sass": "4.7.0"
   }
 }
