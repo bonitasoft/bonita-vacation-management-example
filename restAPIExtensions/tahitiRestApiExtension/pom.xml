@@ -9,10 +9,23 @@
     <description>REST API extension that provide API to list vacation request submitted by employee managed by provided manager id</description>
     
     <properties>
-        <bonita.version>[7.9,)</bonita.version>
-        <groovy.version>2.4.3-01</groovy.version>
+        <bonita.version>[7.10,)</bonita.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>bintray</id>
+            <name>Groovy Bintray</name>
+            <url>https://dl.bintray.com/groovy/maven</url>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -24,7 +37,7 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>2.4.4</version>
+            <version>2.4.16</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -50,19 +63,13 @@
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <version>1.0-groovy-2.4</version>
+            <version>1.2-groovy-2.4</version>
             <scope>test</scope>
         </dependency>
         <dependency> <!-- enables mocking of classes (in addition to interfaces) -->
-            <groupId>cglib</groupId>
-            <artifactId>cglib-nodep</artifactId>
-            <version>2.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency> <!-- enables mocking of classes without default constructor (together with CGLIB) -->
-            <groupId>org.objenesis</groupId>
-            <artifactId>objenesis</artifactId>
-            <version>1.2</version>
+		    <groupId>net.bytebuddy</groupId>
+		    <artifactId>byte-buddy</artifactId>
+		    <version>1.8.21</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -88,29 +95,29 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.8.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                     <compilerId>groovy-eclipse-compiler</compilerId>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-compiler</artifactId>
-                        <version>2.9.2-01</version>
+                        <version>3.3.0-01</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
-                        <version>${groovy.version}</version>
+                        <version>2.4.16-02</version>
                     </dependency>
                 </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <id>page-content</id>
