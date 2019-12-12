@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletRequest
 class Index implements RestApiController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger("com.bonitasoft")
+	
+	private static final String REVIEW_REQUEST_TASK_NAME = 'Review request'; 
 
     @Override
     RestApiResponse doHandle(HttpServletRequest request, RestApiResponseBuilder responseBuilder, RestAPIContext context) {
