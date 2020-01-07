@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.9.24",
   "id" : "ExampleVacationManagement",
   "name" : "ExampleVacationManagement",
-  "lastUpdate" : 1576192075460,
+  "lastUpdate" : 1578411256186,
   "rows" : [
     [
       {
@@ -407,6 +407,31 @@
                 "target" : {
                   "type" : "constant",
                   "value" : "_self"
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "URL"
+                },
+                "pageToken" : {
+                  "type" : "constant"
+                },
+                "processName" : {
+                  "type" : "constant"
+                },
+                "processVersion" : {
+                  "type" : "constant"
+                },
+                "taskId" : {
+                  "type" : "constant"
+                },
+                "caseId" : {
+                  "type" : "constant"
+                },
+                "appToken" : {
+                  "type" : "constant"
+                },
+                "urlParams" : {
+                  "type" : "constant"
                 }
               },
               "reference" : "6b31c345-a90a-4084-9106-958038ebe0f5",
@@ -1480,11 +1505,28 @@
     "urlStartCreateProcess" : {
       "type" : "expression",
       "value" : [
+        "function getPortalUrl() {\r",
+        "  var locationHref = window.location.href;\r",
+        "  var indexOfPortal = locationHref.indexOf('/portal/');\r",
+        "  if (indexOfPortal >= 0) {\r",
+        "    return locationHref.substring(0, indexOfPortal);\r",
+        "  } else {\r",
+        "    //in case of a layout instead of a page/form, the servlet mapping is /apps/* instead of /portal/*\r",
+        "    var indexOfApps = locationHref.indexOf('/apps/');\r",
+        "    if (indexOfApps >= 0) {\r",
+        "      return locationHref.substring(0, indexOfApps);\r",
+        "    } else {\r",
+        "      //Make the link work in case we are in the preview and the target process is deployed in the portal\r",
+        "      return '/bonita';\r",
+        "    }\r",
+        "  }\r",
+        "}\r",
+        "\r",
         "// Return the URL to the new vacation request process\r",
         "// instantiation form\r",
         "if ($data.processCreate &&\r",
         "    $data.processCreate.length > 0) {\r",
-        "  return \"/bonita/portal/resource/process/\" +\r",
+        "  return getPortalUrl() + \"/portal/resource/process/\" +\r",
         "    $data.processCreate[0].name +\r",
         "    \"/\"+$data.processCreate[0].version +\r",
         "    \"/content/?id=\" +\r",
