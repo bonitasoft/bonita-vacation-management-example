@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.9.24",
   "id" : "ExampleVacationManagement",
   "name" : "ExampleVacationManagement",
-  "lastUpdate" : 1578494998634,
+  "lastUpdate" : 1578503090166,
   "rows" : [
     [
       {
@@ -892,14 +892,16 @@
                                       "value" : "{\"vacationRequestIdContract\": copySelectedRow.persistenceId_string, \"startDateContract\": copySelectedRow.startDate, \"returnDateContract\": copySelectedRow.returnDate,\"numberOfDaysContract\":copySelectedRow.numberOfDays}"
                                     },
                                     "dataFromSuccess" : {
-                                      "type" : "variable"
+                                      "type" : "variable",
+                                      "value" : ""
                                     },
                                     "dataFromError" : {
-                                      "type" : "variable"
+                                      "type" : "variable",
+                                      "value" : ""
                                     },
                                     "targetUrlOnSuccess" : {
                                       "type" : "interpolation",
-                                      "value" : "/bonita/apps/tahiti/index/"
+                                      "value" : "{{portalUrl}}/apps/tahiti/index/"
                                     },
                                     "collectionToModify" : {
                                       "type" : "variable"
@@ -913,6 +915,22 @@
                                     },
                                     "removeItem" : {
                                       "type" : "variable"
+                                    },
+                                    "assign" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "responseStatusCode" : {
+                                      "type" : "variable",
+                                      "value" : ""
+                                    },
+                                    "closeOnSuccess" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "modalId" : {
+                                      "type" : "constant",
+                                      "value" : ""
                                     }
                                   },
                                   "reference" : "ade9256c-1c87-4b46-95ec-93235d5789a1",
@@ -1041,14 +1059,16 @@
                               "value" : "{\"vacationRequestIdContract\": copySelectedRow.persistenceId_string}"
                             },
                             "dataFromSuccess" : {
-                              "type" : "variable"
+                              "type" : "variable",
+                              "value" : ""
                             },
                             "dataFromError" : {
-                              "type" : "variable"
+                              "type" : "variable",
+                              "value" : ""
                             },
                             "targetUrlOnSuccess" : {
                               "type" : "interpolation",
-                              "value" : "/bonita/apps/tahiti/index/"
+                              "value" : "{{portalUrl}}/apps/tahiti/index/"
                             },
                             "collectionToModify" : {
                               "type" : "variable"
@@ -1062,6 +1082,22 @@
                             },
                             "removeItem" : {
                               "type" : "variable"
+                            },
+                            "assign" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "responseStatusCode" : {
+                              "type" : "variable",
+                              "value" : ""
+                            },
+                            "closeOnSuccess" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "modalId" : {
+                              "type" : "constant",
+                              "value" : ""
                             }
                           },
                           "reference" : "fe6bb6a2-9f17-42c8-8284-7b6d3dfa7f49",
@@ -1469,7 +1505,7 @@
     "myVacationAvailable" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.VacationAvailable?q=findByBonitaBPMId&p=0&c=1&f=bonitaBPMId={{session.user_id}}"
+        "{{portalUrl}}/API/bdm/businessData/com.company.model.VacationAvailable?q=findByBonitaBPMId&p=0&c=1&f=bonitaBPMId={{session.user_id}}"
       ],
       "exposed" : false
     },
@@ -1486,7 +1522,7 @@
         "// Return the API URL to instantiate the cancel vacation request\r",
         "// process\r",
         "if ($data.processCancel  && $data.processCancel.length > 0) {\r",
-        "  return getPortalUrl() + \"/API/bpm/process/\" +\r",
+        "  return $data.portalUrl + \"/API/bpm/process/\" +\r",
         "    $data.processCancel[0].id +\r",
         "    \"/instantiation\";\r",
         "} else {\r",
@@ -1498,14 +1534,14 @@
     "session" : {
       "type" : "url",
       "value" : [
-        "../API/system/session/1"
+        "{{portalUrl}}/API/system/session/1"
       ],
       "exposed" : false
     },
     "processModify" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/process?s=Modify Pending Vacation Request &p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
+        "{{portalUrl}}/API/bpm/process?s=Modify Pending Vacation Request &p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
       ],
       "exposed" : false
     },
@@ -1516,7 +1552,7 @@
         "// instantiation form\r",
         "if ($data.processCreate &&\r",
         "    $data.processCreate.length > 0) {\r",
-        "  return getPortalUrl() + \"/portal/resource/process/\" +\r",
+        "  return $data.portalUrl + \"/portal/resource/process/\" +\r",
         "    $data.processCreate[0].name +\r",
         "    \"/\"+$data.processCreate[0].version +\r",
         "    \"/content/?id=\" +\r",
@@ -1530,7 +1566,7 @@
     "managerTeamInfo" : {
       "type" : "url",
       "value" : [
-        "../API/extension/vacationRequest"
+        "{{portalUrl}}/API/extension/vacationRequest"
       ],
       "exposed" : false
     },
@@ -1540,7 +1576,7 @@
         "// Return the API URL to instantiate the modify vacation request\r",
         "// process\r",
         "if ($data.processModify  && $data.processModify.length > 0) {\r",
-        "  return getPortalUrl() + \"/API/bpm/process/\" +\r",
+        "  return $data.portalUrl + \"/API/bpm/process/\" +\r",
         "    $data.processModify[0].id +\r",
         "    \"/instantiation\";\r",
         "} else {\r",
@@ -1552,7 +1588,7 @@
     "myVacation" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.VacationRequest?q=findByRequesterBonitaBPMId&p=0&c=100&f=requesterBonitaBPMId={{session.user_id}}"
+        "{{portalUrl}}/API/bdm/businessData/com.company.model.VacationRequest?q=findByRequesterBonitaBPMId&p=0&c=100&f=requesterBonitaBPMId={{session.user_id}}"
       ],
       "exposed" : false
     },
@@ -1573,14 +1609,14 @@
     "processCreate" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/process?s=New Vacation Request&p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
+        "{{portalUrl}}/API/bpm/process?s=New Vacation Request&p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
       ],
       "exposed" : false
     },
     "processCancel" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/process?s=Cancel Vacation Request&p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
+        "{{portalUrl}}/API/bpm/process?s=Cancel Vacation Request&p=0&c=1&o=version%20DESC&f=activationState=ENABLED"
       ],
       "exposed" : false
     },
@@ -1588,6 +1624,26 @@
       "type" : "json",
       "value" : [
         "{}"
+      ],
+      "exposed" : false
+    },
+    "portalUrl" : {
+      "type" : "expression",
+      "value" : [
+        "var locationHref = window.location.href;\r",
+        "var indexOfPortal = locationHref.indexOf('/portal/');\r",
+        "if (indexOfPortal >= 0) {\r",
+        "  return locationHref.substring(0, indexOfPortal);\r",
+        "} else {\r",
+        "  //in case of a layout instead of a page/form, the servlet mapping is /apps/* instead of /portal/*\r",
+        "  var indexOfApps = locationHref.indexOf('/apps/');\r",
+        "  if (indexOfApps >= 0) {\r",
+        "    return locationHref.substring(0, indexOfApps);\r",
+        "  } else {\r",
+        "    //Make the link work in case we are in the preview and the target process is deployed in the portal\r",
+        "    return '/bonita';\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     }

@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.9.24",
   "id" : "newVacationRequestForm",
   "name" : "newVacationRequestForm",
-  "lastUpdate" : 1576192100236,
+  "lastUpdate" : 1578503161102,
   "rows" : [
     [
       {
@@ -374,7 +374,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : "/bonita/apps/tahiti/index/"
+                    "value" : "{{portalUrl}}/apps/tahiti/index/"
                   },
                   "class" : {
                     "type" : "constant",
@@ -434,16 +434,34 @@
                     "type" : "interpolation"
                   },
                   "dataFromSuccess" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "dataFromError" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "valueToAdd" : {
                     "type" : "constant"
                   },
                   "removeItem" : {
                     "type" : "variable"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "f1a2698f-ba8e-4f2a-a55b-da2ff0fdd643",
@@ -481,6 +499,26 @@
         "  \"startDateContract\" : null,\r",
         "  \"returnDateContract\" : null,\r",
         "  \"numberOfDaysContract\" : 0\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "portalUrl" : {
+      "type" : "expression",
+      "value" : [
+        "var locationHref = window.location.href;\r",
+        "var indexOfPortal = locationHref.indexOf('/portal/');\r",
+        "if (indexOfPortal >= 0) {\r",
+        "  return locationHref.substring(0, indexOfPortal);\r",
+        "} else {\r",
+        "  //in case of a layout instead of a page/form, the servlet mapping is /apps/* instead of /portal/*\r",
+        "  var indexOfApps = locationHref.indexOf('/apps/');\r",
+        "  if (indexOfApps >= 0) {\r",
+        "    return locationHref.substring(0, indexOfApps);\r",
+        "  } else {\r",
+        "    //Make the link work in case we are in the preview and the target process is deployed in the portal\r",
+        "    return '/bonita';\r",
+        "  }\r",
         "}"
       ],
       "exposed" : false
