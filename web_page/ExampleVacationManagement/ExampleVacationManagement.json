@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.9.24",
   "id" : "ExampleVacationManagement",
   "name" : "ExampleVacationManagement",
-  "lastUpdate" : 1578503090166,
+  "lastUpdate" : 1578504027758,
   "rows" : [
     [
       {
@@ -1490,13 +1490,6 @@
       "name" : "logo.png",
       "type" : "img",
       "order" : 1,
-      "external" : false
-    },
-    {
-      "id" : "a1a01467-9c74-4222-b00f-0fef74bbf5d0",
-      "name" : "bonita-utils.js",
-      "type" : "js",
-      "order" : 4,
       "external" : false
     }
   ],
