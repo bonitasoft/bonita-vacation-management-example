@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED000574002C4578616D706C652D4E65775661636174696F6E52657175657374372E31302E302D303031372E31302E307370">
+  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.11.0" bonitaModelVersion="7.11.0-005" configId="ACED000574002C4578616D706C652D4E65775661636174696F6E52657175657374372E31312E302D303035372E31312E307370">
     <elements xmi:type="process:Pool" xmi:id="_WQx3EUUNEeeJkrA3PIO9Tw" name="New Vacation Request" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_WQx3EkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_WQygaUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_WQx3E0UNEeeJkrA3PIO9Tw" name="New Vacation Request Start" outgoing="_WQygIUUNEeeJkrA3PIO9Tw">
@@ -1210,7 +1210,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Test" version="7.10.0-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Test" version="7.11.0-005" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_oIb9ITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9IjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_oIb9IzP3Eei3W8hk9dX2TQ">
@@ -1322,7 +1322,7 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXDP3Eei3W8hk9dX2TQ" name="calendarServiceAccountP12File" value="/path/to/p12/file.p12" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_oIckXTP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_iHmAAOgoEeiFb7LWyoBoVw" name="Staging" version="7.10.0-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_iHmAAOgoEeiFb7LWyoBoVw" name="Staging" version="7.11.0-005" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_iHmnEOgoEeiFb7LWyoBoVw">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_iHmnEegoEeiFb7LWyoBoVw" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_iHmnEugoEeiFb7LWyoBoVw">
