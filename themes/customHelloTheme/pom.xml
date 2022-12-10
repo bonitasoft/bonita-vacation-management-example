@@ -11,8 +11,8 @@
 	<description>Application theme based on Bonita 'Flatly' theme. (see http://bootswatch.com/flatly/)</description>
 
 	<properties>
-		<node.version>v10.16.3</node.version>
-		<npm.version>6.9.0</npm.version>
+	    <npm.version>8.19.2</npm.version>
+        <node.version>v16.18.0</node.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -22,7 +22,7 @@
 				<plugin>
 					<groupId>com.github.eirslett</groupId>
 					<artifactId>frontend-maven-plugin</artifactId>
-					<version>1.7.5</version>
+					<version>1.12.1</version>
 					<configuration>
 						<installDirectory>${session.executionRootDirectory}</installDirectory>
 						<nodeVersion>${node.version}</nodeVersion>
